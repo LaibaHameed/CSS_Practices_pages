@@ -1,0 +1,43 @@
+body{
+    box-sizing: content-box;
+    margin:20px 80px 20px 80px ;
+}
+
+div#box-set{
+    margin: 20px;
+    
+}
+
+#box{
+    background-color: cadetblue;
+    margin: 12px;
+    height: 125px;
+    border-radius: 20px;
+    padding: 15px 15px 15px 15px ;
+    /* border: 3px solid #139487; */
+}
+
+.goal,.excuse{
+    float: left;
+    margin: 10px 10px 10px 10px;
+    border: 2px solid darkcyan;
+    border-radius: 10px;
+}
+
+.fuel,.master{
+    float: right;
+    margin: 10px 10px 10px 10px;
+    border: 2px solid darkcyan;
+    border-radius: 10px;
+}
+
+p{
+    color: rgba(255, 250, 240, 0.965);
+    font-size: 19px;
+    font-weight: 500;
+    font-family: "Roboto Serif";
+    line-height: 25px;
+    padding-left: 10px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
