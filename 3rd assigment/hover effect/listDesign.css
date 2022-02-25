@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Roboto+Serif&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: poppins, sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px; 
+    min-height: 100vh;
+    background: #f7f7f7;
+}
+
+ .container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.container .box{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    position: relative;
+    width: 400px;
+    height: 100px;
+    background: #fff;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.025);
+}
+
+.container .box-1
+{
+    transform: translateX(0px);
+}
+
+ .container .box-3{
+    transform: translateX(0px);
+}
+
+.container:hover .box-1{
+    transform: translateX(-70px);
+}
+
+.container:hover .box-3{ 
+    transform: translateX(70px);
+} 
+
+.container .box::before{
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background: var(--clr);
+    transition: 0.5s ease-in-out;
+}
+
+.container .box:hover::before{
+    width: 100%;
+}
+
+.container .box .content{
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.container .box .content .icon{
+    position: relative;
+    min-width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .box .content .icon ion-icon{
+    font-size: 2.5rem;
+    color: var(--clr);
+    transition: 0.5s ease-in-out;
+}
+
+.container .box:hover .content .icon ion-icon{
+    color: #fff;
+}
+
+.container .box .content .text h3{
+    font-weight: 500;
+    color: var(--clr);
+}
+
+.container .box .content .text p{ 
+    color: #999;
+    font-size: 0.9rem;
+    transition: 0.5s ease-in-out;
+}
+
+.container .box:hover .content .text h3,
+.container .box:hover .content .text p{
+    color: #fff;
+}
