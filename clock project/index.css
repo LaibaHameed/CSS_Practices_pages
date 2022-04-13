@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&family=Nunito:wght@200;300;400;600;700&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600&family=Roboto+Mono:wght@300;400;500;600;700&family=Roboto+Serif&display=swap');
+
+* {
+    font-size: 18px;
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Rajdhani';
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #4a7c59;
+}
+
+.container {
+    border: 1px solid #4a7c59;
+    border-radius: 1rem;
+    width: 600px;
+    height: 270px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50px;
+    background: linear-gradient(315deg, #4f855f, #437050);
+    box-shadow: -40px -40px 80px #3f694c,
+        40px 40px 80px #558f66;
+
+}
+
+.main{
+    color: whitesmoke;
+}
+
+h1 {
+    font-size: 1.7rem;
+    letter-spacing: 0.12rem;
+    color: whitesmoke;
+    line-height: 2.5rem;
+}
+
+p {
+    font-size: 1.3rem;
+    color: whitesmoke;
+}
