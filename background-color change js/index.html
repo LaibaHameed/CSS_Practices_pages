@@ -17,14 +17,14 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-background: #2c2a2a;
-box-shadow: inset 20px 20px 60px #252424,
-            inset -20px -20px 60px #333030;
+            background: #2c2a2a;
+            box-shadow: inset 20px 20px 60px #252424,
+                inset -20px -20px 60px #333030;
         }
 
         button:hover {
             font-size: 18px;
-                }
+        }
     </style>
 </head>
 
@@ -33,17 +33,18 @@ box-shadow: inset 20px 20px 60px #252424,
 </body>
 
 <script>
-    
     let buttonVar = document.querySelector('button');
     let bodyVar = document.querySelector('body');
-    let colors = ['#ffb703', '#e63946', '#fca311', '#d90429', '#c9184a', '#4d908e', '#006d77', '#0d3b66', '#797d62', '#06d6a0', '#bc4749', '#9d8189', '#2c6e49', '#2c5530', '#461220'] ;
+    let colors = ['#ffb703', '#e63946', '#fca311', '#d90429', '#c9184a', '#4d908e', '#006d77', '#0d3b66', '#797d62',
+        '#06d6a0', '#bc4749', '#9d8189', '#2c6e49', '#2c5530', '#461220'
+    ];
 
     bodyVar.style.background = "#7f055f";
 
     const myFun = () => {
         try {
 
-            const colorIndex = parseInt(Math.random()*colors.length);
+            const colorIndex = parseInt(Math.random() * colors.length);
             bodyVar.style.background = colors[colorIndex];
         } catch (error) {
             console.log(error.message);
@@ -51,7 +52,6 @@ box-shadow: inset 20px 20px 60px #252424,
     }
 
     buttonVar.addEventListener("click", myFun);
-
-    </script>
+</script>
 
 </html>
