@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background change with js </title>
+    <style>
+        button {
+            font-size: 20px;
+            padding: 10px 15px;
+            color: whitesmoke;
+            /* color: black; */
+            /* border-radius: 50px; */
+            border-radius: 5px;
+            /* background: #e0e0e0;
+            box-shadow: 20px 20px 60px #bebebe,
+                -20px -20px 60px #ffffff; */
+            border: 1px solid gray;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            /* border-radius: 50px; */
+background: #2c2a2a;
+box-shadow: inset 20px 20px 60px #252424,
+            inset -20px -20px 60px #333030;
+        }
+
+        button:hover {
+            font-size: 18px;
+            /* color: rgba(0, 0, 0, 0.911); */
+        }
+    </style>
+</head>
+
+<body>
+    <button>Click Me!</button>
+</body>
+
+<script>
+    
+    let buttonVar = document.querySelector('button');
+    let bodyVar = document.querySelector('body');
+    let colors = ['#ffb703', '#e63946', '#fca311', '#d90429', '#c9184a', '#4d908e', '#006d77', '#0d3b66', '#797d62', '#06d6a0', '#bc4749', '#9d8189', '#2c6e49', '#2c5530', '#461220'] ;
+
+    bodyVar.style.background = "#7f055f";
+
+    const myFun = () => {
+        try {
+
+            const colorIndex = parseInt(Math.random()*colors.length);
+            bodyVar.style.background = colors[colorIndex];
+        } catch (error) {
+            console.log(error.message);
+        }
+    }
+
+    buttonVar.addEventListener("click", myFun);
+
+    </script>
+
+</html>
