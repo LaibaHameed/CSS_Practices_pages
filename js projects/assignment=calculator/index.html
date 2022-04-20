@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- custom css  -->
+    <link rel="stylesheet" href="index.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+
+    <form name="calculator">
+
+
+        <div class="row m-1">
+            <input type="text" name="answer" id="inp" /><br /><br />
+        </div>
+
+        <div class="row m-1">
+            <input type="button" class="col-3" value="(" onclick="calculator.answer.value+='(' " />
+            <input type="button" class="col-3" value=")" onclick="calculator.answer.value+=')' " />
+            <input type="button" class="col-3" id="del" value="&larr;" onclick="delItem()" />
+            <input type="button" class="col-3" value="ESC" onclick="calculator.answer.value= '' " />
+        </div>
+
+        <div class="row m-1">
+            <input type="button" class="col-3" value="7" onclick="calculator.answer.value+='7' " />
+            <input type="button" class="col-3" value="8" onclick="calculator.answer.value+='8' " />
+            <input type="button" class="col-3" value="9" onclick="calculator.answer.value+='9' " />
+            <input type="button" class="col-3" value="x" onclick="calculator.answer.value+='*' " />
+        </div>
+
+        <div class="row m-1">
+            <input type="button" class="col-3" value="4" onclick="calculator.answer.value+='4' " />
+            <input type="button" class="col-3" value="5" onclick="calculator.answer.value+='5' " />
+            <input type="button" class="col-3" value="6" onclick="calculator.answer.value+='6' " />
+            <input type="button" class="col-3" value="-" onclick="calculator.answer.value+='-' " />
+        </div>
+
+        <div class="row m-1">
+            <input type="button" class="col-3" value="1" onclick="calculator.answer.value+='1' " />
+            <input type="button" class="col-3" value="2" onclick="calculator.answer.value+='2' " />
+            <input type="button" class="col-3" value="3" onclick="calculator.answer.value+='3' " />
+            <input type="button" class="col-3" value="+" onclick="calculator.answer.value+='+' " />
+        </div>
+
+        <div class="row m-1">
+            <input type="button" class="col-3" value="0" onclick="calculator.answer.value+='0' " />
+            <input type="button" class="col-3" value="." onclick="calculator.answer.value+='.' " />
+            <input type="button" class="col-3" value="/" onclick="calculator.answer.value+='/' " />
+            <input type="button" class="col-3" value="="
+                onclick="calculator.answer.value=eval(calculator.answer.value) " />
+        </div>
+
+
+    </form>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <!-- custom js  -->
+    <script src="index.js"></script>
+
+</body>
+
+</html>
