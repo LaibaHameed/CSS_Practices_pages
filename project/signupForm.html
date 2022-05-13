@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Page</title>
+    <!-- custom css  -->
+    <link rel="stylesheet" href="signupForm.css">
+</head>
+<body>
+    <div class="container">
+        <div class="signUp-box">
+            <div class="col-1">
+                <img src="img-coffe2.jpg" alt="">
+            </div>
+            <div class="col-2">
+                <h2>Welcome!</h2>
+                <span>Already have an Account? <a href="login.html">Login</a></span>
+                <a href="#" class="google-link">
+                    <img src="google.png" alt="">Continue with google
+                </a>
+                <h4>or</h4>
+                <form onsubmit="SubmitUserDetails(); return false">
+
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="input-field Email"  placeholder="Enter your email">
+
+                        <label for="exampleInputEmail1">Set Password</label>
+                        <input type="text" class="input-field Password" placeholder="Enter password">
+
+                        <div class="row">
+                            <input type="checkbox" checked>
+                            <span>I agree to the <a href="#">terms and Conditions</a></span>
+                        </div>
+
+                        <button type="submit" class="">Register Now</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="signup.js"></script>
+</body>
+</html>

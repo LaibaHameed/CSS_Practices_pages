@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <!-- custom css  -->
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="signUp-box">
+            <div class="col-1">
+                <img src="login-img2.jpg" alt="">
+            </div>
+            <div class="col-2">
+                <h2>Welcome Back!</h2>
+                <form onsubmit="loginUser(); return false">
+
+                        <label for="exampleInputEmail1">Email:</label>
+                        <input type="email" class="input-field Email"  placeholder="Enter your email">
+
+                        <label for="exampleInputEmail1">Password:</label>
+                        <input type="text" class="input-field Password" placeholder="Enter password">
+
+                        <button type="submit" class="">Login</button>
+
+                        <div class="row">
+                            <span class="span">Forget Password?</span>
+                            <span class="span">Not a member? <a href="signupForm.html">Sign Up</a></span>
+
+                        </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+    <script src="signup.js"></script>
+</body>
+</html>

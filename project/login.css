@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&family=Nunito:wght@200;300;400;600;700&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600&family=Roboto+Mono:wght@300;400;500;600;700&family=Roboto+Serif&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+    
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #575333,  #3C3B3F );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+}
+
+.signUp-box{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 800px;
+}
+
+.col-1, .col-2{
+    flex-basis: 50%;
+    flex-grow: 1;
+}
+
+.col-1 img{
+    width: 100%;
+    display: block;
+}
+
+.col-2{
+    background: whitesmoke;
+    padding: 40px 8%;
+    color: #605C3C;
+    min-width: 250px;
+}
+
+.col-2 h2{
+    font-weight: 600;
+    font-size: 25px;
+    text-align: center;
+    margin: 10px 0 30px;
+}
+
+.input-field{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #605C3C;
+    outline: none;
+    display: block;
+    width: 100%;
+    margin: 5px 0px 10px;
+}
+
+form label{
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.col-2 form input{
+      margin-bottom: 20px;
+}
+
+
+.col-2 form button{
+    font-size: 17px;
+    padding: 6px;
+    border-radius: 5px;
+    border: 1px solid #605C3C;
+    outline: none;
+    display: block;
+    width: 100%;
+    margin: 30px 0px 30px;
+    background: #605C3C;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.row span{
+    margin-bottom: 11px ;
+    cursor: pointer;
+}
+
+.row span a{
+    color: #323136;
+}

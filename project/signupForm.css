@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&family=Nunito:wght@200;300;400;600;700&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600&family=Roboto+Mono:wght@300;400;500;600;700&family=Roboto+Serif&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+    
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #605C3C,  rgba(167, 137, 98, 0.856));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+}
+
+.signUp-box{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 800px;
+}
+
+.col-1, .col-2{
+    flex-basis: 50%;
+    flex-grow: 1;
+}
+
+.col-1 img{
+    width: 100%;
+    display: block;
+}
+
+.col-2{
+    background: whitesmoke;
+    padding: 40px 8%;
+    color: #605C3C;
+    min-width: 250px;
+}
+
+.col-2 h2{
+    font-weight: 600;
+    font-size: 25px;
+    text-align: center;
+}
+
+.col-2 span{
+    font-size: 14px;
+}
+
+.col-2 span a{
+    font-weight: 500;
+    color: #323136;
+    
+}
+
+.google-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #605C3C;
+    text-decoration: none;
+    color: #323136;
+    font-size: 14px;
+    margin: 20px 0;
+}
+
+.google-link img{
+    width: 23px;
+    margin-right: 10px;
+}
+
+.col-2 h4{
+    font-weight: 400;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.input-field{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #605C3C;
+    outline: none;
+    display: block;
+    width: 100%;
+    margin: 5px 0px 10px;
+}
+
+form label{
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+}
+
+.row input{
+    margin-right: 6px;
+    background: whitesmoke;
+}
+
+.row span{
+    font-size: 14px;
+}
+
+.row span{
+    text-decoration: none;
+}
+
+.col-2 form button{
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #605C3C;
+    outline: none;
+    display: block;
+    width: 100%;
+    margin: 18px 0px 10px;
+    background: #605C3C;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.col-2 form button:hover{
+    font-size: 16px;
+}
+
+
+/* media queries  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
