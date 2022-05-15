@@ -1,0 +1,42 @@
+body{
+    margin: 0 auto;
+    max-width: 900px;
+    width: 90%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#box{
+    float: left;
+    margin-right: 30px;
+    border-radius: 5px;
+    background-color: rgba(18, 141, 141, 0.616);
+    padding: 4px;
+}
+
+.heading{
+    background-color:rgba(18, 141, 141, 0.616);
+    padding: 10px;
+    color: whitesmoke;
+    margin: 15px;
+    text-align: center;
+}
+
+.main,.foot{
+    font-size: 18px;
+    font-weight: 450;
+    text-indent: 30px;
+    line-height: 25px;
+}
+
+.main{
+    margin-top: 30px;
+}
+
+.foot{
+    margin-top: 2px;
+    font-weight: 500;
+}
+
+#list{
+    font-weight: 600;
+}
